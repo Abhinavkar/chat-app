@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix public",
+    "dev":"concurrently \" npm run server \"\"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  }
+}
